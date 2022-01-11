@@ -1,0 +1,45 @@
+<Menu>
+    Image:
+        source:'Img/Background/Background.jpg'
+    GridLayout:
+        cols: 1
+        padding: 100
+        spacing: 100
+        Image:
+            source:'Img/Logo_Arukoru.png'
+        Button:
+            size_hint: .7, .7
+            background_color: 0,0,0,0
+            on_release:
+                root.manager.current = 'PurpleWindow'
+            Image:
+                source:'Img/Game_one.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Button:
+            size_hint: .7, .7
+            background_color: 0,0,0,0
+            Image:
+                source:'Img/Game_two.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Button:
+            size_hint: .7, .7
+            background_color: 0,0,0,0
+            Image:
+                source:'Img/Game_three.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Button:
+            size_hint: .7, .7
+            background_color: 0,0,0,0
+            on_release:
+                root.manager.current = 'PlayersWindow'
+            Image:
+                source:'Img/Game_Player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size

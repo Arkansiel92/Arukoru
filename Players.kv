@@ -1,0 +1,142 @@
+<Players>
+    Image:
+        source:'Img/Background/Background.jpg'
+    GridLayout:
+        id: Grid_Players
+        cols: 1
+        padding: 120
+        spacing: 10
+
+        Label:
+            text:root.Joueur1
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur2
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur3
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur4
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur5
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur6
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur7
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur8
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur9
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            text:root.Joueur10
+            font_size: 20
+            font_name:'Font/Chicken Cripsy.otf'
+            Image:
+                source:'Img/Background/background_add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Label:
+            id: for_space
+            text:''
+        TextInput:
+            id: name_of_player
+            hint_text:'Entrez votre nom'
+            font_name:'Font/Chicken Cripsy.otf'
+            hint_text_color: 1,1,1,1
+            background_color: 0,0,0,0
+            cursor_color: 1,1,1,1
+            font_size: 22
+            foreground_color: 1,1,1,1
+            multiline: False
+            halign: 'center'
+
+
+    FloatLayout:
+        pos: 0, -300
+        Button:
+            id: add_player
+            background_color: 0,0,0,0
+            pos: 800, 50
+            size_hint: .03, .03
+            on_release:
+                root.add_player()
+            Image:
+                source:'Img/add_player.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size
+        Button:
+            id: go_menu
+            background_color: 0,0,0,0
+            pos: 1050, 50
+            size_hint: .03, .03
+            on_release:
+                root.check_players()
+                root.manager.current = 'MainWindow'
+            Image:
+                source:'Img/validate.png'
+                center_x: self.parent.center_x
+                center_y: self.parent.center_y
+                size: self.texture_size

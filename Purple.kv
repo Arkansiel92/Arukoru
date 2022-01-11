@@ -1,0 +1,30 @@
+<Purple>
+    name_player:Player
+    name_challenge:Challenge
+    Image:
+        source:'Img/Background/Background.jpg'
+    GridLayout:
+        cols: 1
+        Label:
+            id: Player
+            text:""
+            font_name:'Font/Chicken Cripsy.otf'
+            halign:'center'
+        Label:
+            id: Challenge
+            text:""
+            font_name:'Font/Chicken Cripsy.otf'
+            halign: 'center'
+    FloatLayout:
+        Button:
+            text:'Retour'
+            size_hint: .07, .07
+            pos: 700, 100
+            on_release:
+                root.manager.current = 'MainWindow'
+        Button:
+            text:'suivant'
+            size_hint: .07, .07
+            pos: 1100, 100
+            on_release: 
+                root.Game()
